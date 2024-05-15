@@ -12,9 +12,9 @@ class ComicSeeder extends Seeder
      */
     public function run(): void
     {
-        $comics = config('comics.comic');
+        $products = config('comics.comics');
 
-        foreach ($comics as $comic) {
+        foreach ($products as $comic) {
             $comic = new Comic();
             $comic->title = $comic['title'];
             $comic->description = $comic['description'];
@@ -23,6 +23,7 @@ class ComicSeeder extends Seeder
             $comic->series = $comic['series'];
             $comic->sale_date = $comic['sale_date'];
             $comic->type = $comic['type'];
+            $comic->save();
         }
     }
 }
