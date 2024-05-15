@@ -8,6 +8,7 @@
                         <p>{{ $comic->id }}</p>
                         <p>{{ $comic->title }}</p>
                         <p>{{ $comic->description }}</p>
+                        <p><a href="{{ route('comics.show', $comic) }}">View</a></p>
                     </div>
                     <!-- /.card -->
                 </div>
