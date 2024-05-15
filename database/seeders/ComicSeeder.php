@@ -14,15 +14,15 @@ class ComicSeeder extends Seeder
     {
         $products = config('comics.comics');
 
-        foreach ($products as $comic) {
+        foreach ($products as $product) {
             $comic = new Comic();
-            $comic->title = $comic['title'];
-            $comic->description = $comic['description'];
-            $comic->thumb = $comic['thumb'];
-            $comic->price = $comic['price'];
-            $comic->series = $comic['series'];
-            $comic->sale_date = $comic['sale_date'];
-            $comic->type = $comic['type'];
+            $comic->title = $product['title'];
+            $comic->description = $product['description'];
+            $comic->thumb = $product['thumb'];
+            $comic->price = $product['price'];
+            $comic->series = $product['series'];
+            $comic->sale_date = $product['sale_date'];
+            $comic->type = $product['type'];
             $comic->save();
         }
     }
