@@ -1,7 +1,7 @@
 @extends('layout.app')
 @section('content')
     <div class="container">
-        <div class="row row-cols-3 row-cols-lg-2 py-3 g-4">
+        <div class="row row-cols-2 row-cols-lg-4 py-3 g-4">
             @forelse ($comics as $comic)
                 <div class="col">
                     <a href="{{ route('comics.show', $comic) }}">
