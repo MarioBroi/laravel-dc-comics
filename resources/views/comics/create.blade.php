@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
 
-        <h1>Add new comics</h1>
+        <h1 class="mt-3">Add new comics</h1>
 
         <form action="{{ route('comics.store') }}" method="post">
             @csrf
@@ -55,7 +55,7 @@
                 <textarea class="form-control" name="description" id="description" rows="3"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-primary mb-5">
                 Create
             </button>
 
