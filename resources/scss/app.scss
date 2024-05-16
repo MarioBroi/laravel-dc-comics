@@ -1,1 +1,12 @@
+@use './partials/header.scss';
+@use './partials/footer.scss';
 @import '~bootstrap/scss/bootstrap';
+
+:root {
+    --comics-primary: #0282F9;
+    --comics-dark: #1C1C1C;
+    --comics-ligth: #ffffff;
+    --comics-success: #55BA59;
+    --comics-dark-text: #003F5E;
+    --comics-secondary: #00A9D9;
+}
