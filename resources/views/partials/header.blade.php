@@ -23,6 +23,9 @@
 
                 <ul class="list-unstyled d-flex">
                     <li class="px-2">
+                        <a href="{{ route('welcome') }}">HOME</a>
+                    </li>
+                    <li class="px-2">
                         <a href="{{ route('comics.index') }}">COMICS</a>
                     </li>
                     <li class="px-2">
