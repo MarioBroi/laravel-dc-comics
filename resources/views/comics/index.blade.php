@@ -32,6 +32,7 @@
             @endforelse
         </div>
         <!-- /.row -->
+        {{ $comics->links('pagination::bootstrap-5') }}
     </div>
     <!-- /.container -->
 @endsection
