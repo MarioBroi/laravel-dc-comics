@@ -14,7 +14,7 @@ class ComicController extends Controller
     {
         //dd(Comic::all());
 
-        return view('comics.index', ['comics' => Comic::orderBy('id')->paginate(8)]);
+        return view('comics.index', ['comics' => Comic::orderByDesc('id')->paginate(20)]);
     }
 
     /**
@@ -41,7 +41,7 @@ class ComicController extends Controller
         $comic->thumb = $data['thumb'];
         $comic->price = $data['price'];
         $comic->series = $data['series'];
-        /* $comic->sale_date = $data['sale_date']; */
+        $comic->sale_date = $data['sale_date'];
         $comic->type = $data['type'];
         $comic->save();
 

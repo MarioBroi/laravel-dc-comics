@@ -37,6 +37,13 @@
             </div>
 
             <div class="mb-3">
+                <label for="sale_date" class="form-label">Sale date</label>
+                <input type="text" class="form-control" name="sale_date" id="sale_date"
+                    aria-describedby="sale_dateHelper" placeholder="0000_00_00" />
+                <small id="sale_dateHelper" class="form-text text-muted">Type the sale date for the current comic</small>
+            </div>
+
+            <div class="mb-3">
                 <label for="type" class="form-label">Type</label>
                 <input type="text" class="form-control" name="type" id="type" aria-describedby="typeHelper"
                     placeholder="Comic" />
