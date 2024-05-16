@@ -17,47 +17,46 @@
 
             <div class="container">
 
-                <a class="navbar-brand" href="#">
-                    <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
-                </a>
+                <ul class="list-unstyled d-flex align-items-center py-1">
 
-                <ul class="list-unstyled d-flex">
+                    <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
+
                     <li class="px-2">
-                        <a href="{{ route('welcome') }}">HOME</a>
+                        <a href="{{ route('welcome') }}" class="nav-link">HOME</a>
                     </li>
                     <li class="px-2">
-                        <a href="{{ route('comics.index') }}">COMICS</a>
+                        <a href="{{ route('comics.index') }}" class="nav-link">COMICS</a>
                     </li>
                     <li class="px-2">
-                        <a href="{{ route('comics.create') }}">CREATE</a>
+                        <a href="{{ route('comics.create') }}" class="dropdown-item">CREATE</a>
                     </li>
                     <li class="px-2">
-                        <a href="">MOVIES</a>
+                        <a href="" class="dropdown-item">MOVIES</a>
                     </li>
                     <li class="px-2">
-                        <a href="">TV</a>
+                        <a href="" class="dropdown-item">TV</a>
                     </li>
                     <li class="px-2">
-                        <a href="">GAMES</a>
+                        <a href="" class="dropdown-item">GAMES</a>
                     </li>
                     <li class="px-2">
-                        <a href="">COLLECTIBLES</a>
+                        <a href="" class="dropdown-item">COLLECTIBLES</a>
                     </li>
                     <li class="px-2">
-                        <a href="">VIDEOS</a>
+                        <a href="" class="dropdown-item">VIDEOS</a>
                     </li>
                     <li class="px-2">
-                        <a href="">FANS</a>
+                        <a href="" class="dropdown-item">FANS</a>
                     </li>
                     <li class="px-2">
-                        <a href="">NEWS</a>
+                        <a href="" class="dropdown-item">NEWS</a>
                     </li>
                     <li class="px-2">
-                        <a href="">SHOP</a>
+                        <a href="" class="dropdown-item">SHOP</a>
                     </li>
                 </ul>
 
-                <span>
+                <span class="mb-3">
                     <input type="text" name="search" id="search" placeholder="Search">
                 </span>
 

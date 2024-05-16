@@ -14,16 +14,14 @@
 
             <p>Dive into the vibrant and heroic world of DC Comics with us! Our store is your ultimate destination for all
                 things DC, from classic tales to the latest adventures of your favorite superheroes. Whether you're a
-                lifelong
-                fan or a newcomer to the universe, we have something for everyone.
+                lifelong fan or a newcomer to the universe, we have something for everyone.
             </p>
 
             <p>
                 Explore our extensive collection featuring iconic characters like Batman, Superman, Wonder Woman, and The
                 Flash.
                 Discover epic storylines, rare editions, and exclusive merchandise that will elevate your comic collection
-                to
-                new heights.
+                to new heights.
             </p>
 
             <p>
@@ -38,6 +36,9 @@
                 Join our community of comic enthusiasts and embark on adventures that leap off the pages. Stay updated with
                 new
                 releases, special promotions, and events that celebrate the rich legacy of DC Comics.
+            </p>
+
+            <p>
                 Unleash your inner hero. Welcome to the DC Universe Comics Shop – Where Legends Live On.
             </p>
 
