@@ -10,3 +10,195 @@
     --comics-dark-text: #003F5E;
     --comics-secondary: #00A9D9;
 }
+
+.jumbo-container {
+    height: 400px;
+    background-image: url(../img/jumbotron.jpg);
+}
+
+.current-series {
+    background-color: var(--comics-primary);
+    margin: -2rem auto 2rem 0;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--comics-ligth);
+}
+
+.comics-display {
+    background-color: var(--comics-dark);
+}
+
+.load-more {
+    background-color: var(--comics-primary);
+    color: var(--comics-ligth);
+    padding: 0.5rem 1rem;
+    margin: 3rem auto 1rem;
+}
+
+.card-bg {
+    background-color: var(--comics-dark);
+}
+
+.thumb-size {
+    height: 250px;
+}
+
+.img-container {
+    height: 50px;
+    background-color: var(--comics-primary);
+    position: relative;
+
+    .thumb-card {
+        position: absolute;
+        bottom: 10px;
+        left: 25%;
+        text-align: center;
+        background-color: var(--comics-secondary);
+        border: 1px solid var(--comics-ligth);
+
+        a {
+            color: var(--comics-ligth);
+            text-decoration: none;
+        }
+
+        img {
+            width: 200px;
+        }
+
+    }
+
+    .book-type {
+        position: absolute;
+        top: -260px;
+        left: 25%;
+        padding: 0 0.4rem;
+        background-color: var(--comics-secondary);
+        color: var(--comics-ligth);
+        text-transform: uppercase;
+    }
+}
+
+.description {
+    width: 50%;
+    margin: 3rem auto;
+
+    .description-left {
+        margin-right: 1.5rem;
+
+        .description-title {
+            color: var(--comics-dark-text);
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 26px;
+            margin-bottom: 1rem;
+        }
+
+        .availability {
+            display: flex;
+
+            .available {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-grow: 2;
+            }
+
+            .available,
+            .check-availability {
+                padding: 0.5rem 1rem;
+                background-color: var(--comics-success);
+                color: var(--comics-ligth);
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+                a {
+                    text-decoration: none;
+                    color: var(--comics-ligth);
+                }
+            }
+        }
+
+        .comic-description {
+            padding: 1rem 0;
+        }
+    }
+}
+
+.info {
+    background-color: #f6f6f6;
+    border-top: 1px solid lightgrey;
+
+    .info-container {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    h4 {
+        color: var(--comics-dark-text);
+        padding: 2rem 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid lightgrey;
+    }
+
+    li:last-child {
+        border-bottom: 1px solid lightgrey;
+    }
+
+    h6 {
+        width: 200px;
+        padding: 0.5rem 0;
+        color: var(--comics-dark-text);
+    }
+
+    p {
+        color: var(--comics-primary);
+        font-size: 12px;
+        padding: 0.5rem 0;
+        margin: 0;
+    }
+
+    .info-left,
+    .info-right {
+        width: 100%;
+    }
+
+    .info-right {
+        margin-left: 1rem;
+    }
+
+    .info-top {
+        border: none;
+    }
+
+    .bottom-info {
+        margin-top: 2rem;
+        border-top: 1px solid lightgrey;
+
+        .bottom-info-container {
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-clickables {
+            border-left: 1px solid lightgrey;
+            padding: 0.5rem 0.5rem 2rem;
+            flex-grow: 1;
+        }
+
+        .info-clickables:last-child {
+            border-right: 1px solid lightgrey;
+        }
+    }
+}
