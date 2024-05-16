@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1>Add new comics</h1>
+        <h1 class="mt-3">Add new comics</h1>
         <form action="{{ route('comics.update', $comic) }}" method="post">
             @csrf
             @method('PUT')
@@ -16,6 +16,7 @@
 
             <div class="mb-3">
                 <img src="{{ $comic->thumb }}" alt="Thumb of {{ $comic->title }}">
+                <br>
                 <label for="thumb" class="form-label">Image</label>
                 <input type="text" class="form-control" name="thumb" id="thumb" aria-describedby="thumbHelper"
                     placeholder="https//" value="{{ $comic->thumb }}" />
@@ -55,7 +56,7 @@
                 <textarea class="form-control" name="description" id="description" rows="6">{{ $comic->description }}</textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-primary mb-5">
                 Update
             </button>
 
