@@ -2,9 +2,12 @@
 
 @section('content')
     <div class="container">
+
         <h1>Add new comics</h1>
+
         <form action="{{ route('comics.store') }}" method="post">
             @csrf
+
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
                 <input type="text" class="form-control" name="title" id="title" aria-describedby="titleHelper"
@@ -15,7 +18,7 @@
             <div class="mb-3">
                 <label for="thumb" class="form-label">Image</label>
                 <input type="text" class="form-control" name="thumb" id="thumb" aria-describedby="thumbHelper"
-                    placeholder="$00.00" />
+                    placeholder="https//" />
                 <small id="thumbHelper" class="form-text text-muted">Type the URL of the Image for the current comic</small>
             </div>
 
@@ -36,7 +39,7 @@
             <div class="mb-3">
                 <label for="type" class="form-label">Type</label>
                 <input type="text" class="form-control" name="type" id="type" aria-describedby="typeHelper"
-                    placeholder="comic" />
+                    placeholder="Comic" />
                 <small id="typeHelper" class="form-text text-muted">Type the type for the current comic</small>
             </div>
 
@@ -49,7 +52,7 @@
                 Create
             </button>
 
-
         </form>
+
     </div>
 @endsection
