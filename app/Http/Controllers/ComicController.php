@@ -35,15 +35,17 @@ class ComicController extends Controller
         //valido l'user input
         $data = $request->all();
 
-        $comic = new Comic();
-        $comic->title = $data['title'];
-        $comic->description = $data['description'];
-        $comic->thumb = $data['thumb'];
-        $comic->price = $data['price'];
-        $comic->series = $data['series'];
-        $comic->sale_date = $data['sale_date'];
-        $comic->type = $data['type'];
-        $comic->save();
+        /*  $comic = new Comic();
+         $comic->title = $data['title'];
+         $comic->description = $data['description'];
+         $comic->thumb = $data['thumb'];
+         $comic->price = $data['price'];
+         $comic->series = $data['series'];
+         $comic->sale_date = $data['sale_date'];
+         $comic->type = $data['type'];
+         $comic->save(); */
+
+        Comic::create($data);
 
         return to_route('comics.index');
     }
@@ -69,7 +71,10 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        dd($request->all());
+        //dd($request->all());
+        $comic->update($request->all());
+
+        return to_route('comics.index');
     }
 
     /**
