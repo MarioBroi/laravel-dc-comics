@@ -14,7 +14,7 @@ class ComicController extends Controller
     {
         //dd(Comic::all());
 
-        return view('comics.index', ['comics' => Comic::orderByDesc('id')->paginate(6)]);
+        return view('comics.index', ['comics' => Comic::orderByDesc('id')->paginate(8)]);
     }
 
     /**

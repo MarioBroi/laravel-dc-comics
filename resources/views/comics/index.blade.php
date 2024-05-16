@@ -4,22 +4,22 @@
         <div class="row row-cols-2 row-cols-lg-4 py-3 g-4">
             @forelse ($comics as $comic)
                 <div class="col">
-                    <a href="{{ route('comics.show', $comic) }}">
+                    <a href="{{ route('comics.show', $comic) }}" class="nav-link">
                         <div class="card">
                             <img class="card-img-top" src="{{ $comic->thumb }}" alt="Title" />
                             <div class="card-body">
                                 <h4 class="card-title">Title: {{ $comic->title }}</h4>
-                                <p class="card-text">{{ $comic->id }}</p>
+                                {{-- <p class="card-text">{{ $comic->id }}</p> --}}
                                 <p class="card-text">{{ $comic->description }}</p>
                                 <p class="card-text">Price: {{ $comic->price }}</p>
                                 <p class="card-text">Series: {{ $comic->series }}</p>
                                 <p class="card-text">Sale date: {{ $comic->sale_date }}</p>
                                 <p class="card-text">Type: {{ $comic->type }}</p>
 
-                                <a href="{{ route('comics.edit', $comic) }}" class="btn btn-primary my-1">Edit</a>
+                                <a href="{{ route('comics.edit', $comic) }}" class="btn btn-primary my-3">Edit</a>
 
                                 <!-- Modal trigger button -->
-                                <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
                                     data-bs-target="#modalId-{{ $comic->id }}">
                                     Delete
                                 </button>
