@@ -5,6 +5,16 @@
 
         <h1 class="mt-3">Add new comics</h1>
 
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
         <form action="{{ route('comics.store') }}" method="post">
             @csrf
 
@@ -25,7 +35,7 @@
             <div class="mb-3">
                 <label for="price" class="form-label">Price</label>
                 <input type="text" class="form-control" name="price" id="price" aria-describedby="priceHelper"
-                    placeholder="$00.00" />
+                    placeholder="$00.00" value="$" />
                 <small id="priceHelper" class="form-text text-muted">Type the price for the current comic</small>
             </div>
 

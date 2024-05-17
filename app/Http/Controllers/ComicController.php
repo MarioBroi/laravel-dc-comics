@@ -45,6 +45,18 @@ class ComicController extends Controller
          $comic->type = $data['type'];
          $comic->save(); */
 
+        $val_data = $request->validate([
+            'title' => 'required|min:3|max:250',
+            'description' => 'nullable|max:550',
+            'thumb' => 'nullable|max:255',
+            'price' => 'nullable|max:10',
+            'series' => 'nullable|max:100',
+            'sale_date' => 'nullable|max:10',
+            'type' => 'nullable|max:100',
+        ]);
+
+        //dd($val_data);
+
         Comic::create($data);
 
         return to_route('comics.index');
