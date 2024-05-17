@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreComicRequest;
+use App\Http\Requests\UpdateComicRequest;
 use App\Models\Comic;
-use Illuminate\Http\Request;
 
 class ComicController extends Controller
 {
@@ -59,12 +59,13 @@ class ComicController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Comic $comic)
+    public function update(UpdateComicRequest $request, Comic $comic)
     {
-        // $val_data = $request->validated();
+        $val_data = $request->validated();
 
-        //dd($request->all());
-        //$comic->update($val_data);
+        //dd($val_data);
+
+        $comic->update($val_data);
 
         return to_route('comics.index');
     }
